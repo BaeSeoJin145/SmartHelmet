@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (min-width: 391px) {
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login .div {
+    width: 390px;
+    height: 844px;
+    transform: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.login {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+  touch-action: pan-x pan-y; /* 화면 확대 방지 */
+}
+
+.login .div {
+  background-color: #ffffff;
+  width: 100vw; /* 뷰포트 너비에 맞게 */
+  height: 100vh; /* 뷰포트 높이에 맞게 */
+  max-width: 390px; /* 최대 크기를 기존 디자인에 맞춤 */
+  max-height: 844px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale( min(100vw / 390, 100vh / 844) );
+  transform-origin: top left;
+}
+  
+  .login .container {
+    width: 390px;
+    height: 157px;
+    top: 0;
+    left: 0;
+    background-color: #ff6e2b;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    position: absolute;
+    border: 0px none;
+  }
+  
+  .login .text-wrapper {
+    width: 284px;
+    top: 44px;
+    left: 76px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #171a1f;
+    font-size: 48px;
+    text-align: right;
+    line-height: 68px;
+    position: absolute;
+    letter-spacing: 0;
+  }
+  
+  .login .arrow-left {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 55px;
+    left: 30px;
+  }
+  
+  .login .group {
+    position: relative;
+    width: 35px;
+    height: 25px;
+    top: 10px;
+    left: 6px;
+    background-image: url(./img/image.png);
+    background-size: 100% 100%;
+  }
+  
+  .login .button {
+    all: unset;
+    box-sizing: border-box;
+    position: absolute;
+    width: 330px;
+    height: 46px;
+    top: 545px;
+    left: 30px;
+    background-color: #ff6e2b;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: transparent;
+  }
+  
+  .login .text-wrapper-2 {
+    top: 4px;
+    left: 136px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+  }
+
+  .login .text-wrapper-2-login-btn {
+    top: 4px;
+    left: 136px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+  }
+  
+  .login .container-2 {
+    width: 330px;
+    height: 192px;
+    top: 249px;
+    left: 30px;
+    background-color: #ffffff;
+    border-radius: 33px;
+    box-shadow: 0px 4px 9px #171a1f8c, 0px 0px 2px #171a1f1f;
+    position: absolute;
+    border: 0px none;
+  }
+  
+  .login .overlap {
+    position: absolute;
+    width: 279px;
+    height: 52px;
+    top: 104px;
+    left: 25px;
+    border-radius: 6px;
+  }
+  
+  .login .textbox {
+    position: absolute;
+    width: 279px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #bdc1ca;
+  }
+  
+  .login .text-wrapper-3 {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-weight: 400;
+    color: #9095a1;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+  
+  .login .b-eye-wrapper {
+    width: 37px;
+    height: 37px;
+    top: 115px;
+    left: 270px;
+    position: absolute;
+    border: 0px none;
+
+  }
+  
+  .login .b-eye {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 7px;
+    left: 7px;
+  }
+  
+  .login .group-wrapper {
+    position: relative;
+    width: 19px;
+    height: 15px;
+    top: 3px;
+    left: 3px;
+  }
+  
+  .login .overlap-group-wrapper {
+    height: 15px;
+  }
+  
+  .login .overlap-group {
+    position: relative;
+    width: 21px;
+    height: 18px;
+    top: -1px;
+    left: -1px;
+  }
+  
+  .login .img {
+    position: absolute;
+    width: 21px;
+    height: 14px;
+    top: 3px;
+    left: 0;
+  }
+  
+  .login .group-2 {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 3px;
+    left: 5px;
+  }
+  
+  .login .group-3 {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 0;
+    left: 0;
+  }
+  
+  .login .div-wrapper {
+    position: absolute;
+    width: 279px;
+    height: 52px;
+    top: 31px;
+    left: 25px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #bdc1ca;
+  }
+  
+  

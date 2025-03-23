@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+
+    <title>Smart Helmet</title>
+    <link rel="stylesheet" href="./css-files/index.css">
+    <link rel="manifest" href="./script/site.webmanifest">
+    <link rel="icon" type="image/png" href="./icons/icon-32x32.png">
+
+</head>
+<body>
+    <div class="screen">
+        <div class="div">
+            <div class="overlap-group">
+                <div class="container">
+                    <div class="smart-helmet">Smart<br />Helmet</div>
+                </div>
+                <div class="container-2-pic"><img src="./icons/ride-picture.png" alt="Loading" width="150" height="130"></div>
+            </div>
+            <button id="go-login-btn" class="button"><div class="text-wrapper">Login</div></button>
+            <button id="go-signup-btn" class="div-wrapper"><div class="text-wrapper-2-signup">Sign Up</div></button>
+        </div>
+    </div>
+    
+    <script type="module" src="./script/app.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./script/service-worker.js", { scope: "./script/" })
+                .then((registration) => {
+                    console.log("✅ Service Worker 활성화 완료:", registration);
+                })
+                .catch((error) => {
+                    console.error("❌ Service Worker 등록 실패:", error);
+                });
+        } else {
+            console.warn("🚨 이 브라우저는 Service Worker를 지원하지 않음");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Free Riding</title>    
+    <link rel="stylesheet" href="./css-files/freeRiding.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="icon" type="image/png" href="./icons/icon-32x32.png">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="div">
+        <div class="container">
+          <div class="overlap-group">
+            <div class="text-wrapper">Free-Riding</div>
+            <div class="arrow-left" id="go-back-btn"><div class="group"><img src="./icons/arrow.png" alt="Loading" width="40" height="30"></div></div>
+          </div>
+          <div class="text-wrapper-2-des">Ride without automatic support</div>
+        </div>
+        <div class="rectangle" id="map"></div>
+        <div class="start-riding-wrapper" id="left-btn"><div class="start-riding">Left</div></div>
+        <div class="div-wrapper" id="back-way-btn"><div class="start-riding">Back</div></div>
+        <div class="container-2" id="right-btn"><div class="start-riding">Right</div></div>
+      </div>
+    </div>
+    <script type="module" src="./script/app.js"></script>
+  </body>
+</html>
+

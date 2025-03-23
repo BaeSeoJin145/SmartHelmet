@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css-files/login.css">
+    <link rel="icon" type="image/png" href="./icons/icon-32x32.png">
+</head>
+<body>
+    <div class="login">
+        <div class="div">
+            <div class="container">
+                <div class="text-wrapper">Login</div>
+                <div class="arrow-left" id="go-back-btn">
+                    <div class="group"><img src="./icons/arrow.png" alt="Loading" width="40" height="30"></div>
+                </div>
+            </div>
+            <div class="container-2">
+                
+                <input class="div-wrapper" type="email" id="email" class="text-wrapper-3" placeholder=" e-mail">
+                
+                <input class="overlap" type="password" id="password" class="text-wrapper-3" placeholder=" Password">
+                    <div class="b-eye-wrapper">
+                        <div class="b-eye" id="toggle-password">
+                            <div class="group-wrapper">
+                                <div class="overlap-group-wrapper">
+                                    <div class="overlap-group">
+                                        
+                                        <img class="group-3" src="./icons/eye-open.png" width="50px" height="30px;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </type=>
+            </div>
+            <button class="button" id="login-btn"><div class="text-wrapper-2-login-btn">Login</div></button>
+        </div>
+    </div>
+    <script type="module" src="./script/app.js"></script>
+    <script>
+
+        
+        document.getElementById("toggle-password").addEventListener("click", function() {
+            const passwordField = document.getElementById("password");
+            passwordField.type = passwordField.type === "password" ? "text" : "password";
+        });
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>네비게이션</title>
+
+    <link rel="stylesheet" href="./css-files/withNavigation.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="icon" type="image/png" href="./icons/icon-32x32.png">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="div">
+        <div class="overlap">
+          <div class="text-wrapper">Navigation</div>
+          <div class="overlap-group">
+            <div class="arrow-left" id="go-back-btn"><div class="group"><img src="./icons/arrow.png" alt="Loading" width="40" height="30"></div></div>
+            <p class="ride-with-automatic">Ride with automatic support<br/>Set your destination and have fun ride</p>
+          </div>
+        </div>
+
+        <!-- 🔹 검색 입력 필드 + 자동완성 팝업 -->
+
+          <input class="textbox" type="text" id="destination" placeholder="목적지 입력 (예: Quan 7)" oninput="searchSuggestions()">
+        <div class="suggestion-box"> 
+          <ul id="suggestions"></ul>
+        </div>
+        
+
+
+        <div class="overlap-group-2">
+          <div class="container" id="click-search-des"><div class="start-riding">Search</div></div>
+          <div class="text-wrapper-2-distance" id="distance-info">DISTANCE: -km</div>
+          <div class="rectangle" id="map"></div>
+        </div>
+
+        <div class="start-riding-wrapper" id="finish-ride"><div class="start-riding-2">Finish Riding</div></div>
+        <div class="div-wrapper" id="left-btn"><div class="start-riding-3">Left</div></div>
+        <div class="container-2" id="back-way-btn"><div class="start-riding-3">Back</div></div>
+        <div class="container-3" id="right-btn"><div class="start-riding-3">Right</div></div>
+
+        <!-- 🔹 최근 방문 장소 -->
+        <div class="overlap-2">
+          <div class="rectangle-2" id="recent-container">
+            <ul id="recent-locations"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="module" src="./script/app.js"></script>
+  </body>
+</html>
